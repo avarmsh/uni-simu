@@ -3,28 +3,28 @@ import Uni.*;
 
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("Ava", "40313403");
-        Person p2 = new Person("Parimah", "40313404");
-        Person p3 = new Person("Mrs.Zare", "12345");
-        Person p4 = new Person("Mr.Ghatee", "123456");
-        Person p5 = new Person("Noora", "40312400");
+        Person p1 = new Person("Ava", "1");
+        Person p2 = new Person("Parimah", "2");
+        Person p3 = new Person("Mrs.Zare", "3");
+        Person p4 = new Person("Mr.Ghatee", "4");
+        Person p5 = new Person("Noora", "5");
 
         Major cs = new Major("Computer Science", 15);
         Major math = new Major("Mathematics", 10);
 
-        Student s1 = new Student(p1.id, 2023, cs.id);
-        Student s2 = new Student(p2.id, 2023, cs.id);
-        Student s3 = new Student(p5.id, 2023, math.id);
+        Student s1 = new Student(p1.id, 1401, cs.id);
+        Student s2 = new Student(p2.id, 1402, cs.id);
+        Student s3 = new Student(p5.id, 1403, math.id);
 
-        System.out.println("Student 1 ID: " + s1.studentID);
-        System.out.println("Student 2 ID: " + s2.studentID);
-        System.out.println("Student 3 ID: " + s3.studentID);
+        System.out.println("Student 1 ID (Ava):" + s1.studentID);
+        System.out.println("Student 2 ID (Parimah): " + s2.studentID);
+        System.out.println("Student 3 ID (Noora): " + s3.studentID);
 
         Professor prof1 = new Professor(p2.id, cs.id);
         Professor prof2 = new Professor(p3.id, math.id);
 
-        System.out.println("Professor 1 ID: " + prof1.id);
-        System.out.println("Professor 2 ID: " + prof2.id);
+        System.out.println("Professor 1 ID(Mrs.Zare): " + prof1.id);
+        System.out.println("Professor 2 ID(Mr.Ghatee): " + prof2.id);
 
         Course course1 = new Course("Bp", 3);
         Course course2 = new Course("Ap", 4);
